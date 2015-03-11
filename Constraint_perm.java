@@ -37,7 +37,7 @@ public static void permute(int[] A,int i,int v){  // calculates different permut
 		for(int k=0;k<constr*2;k=k+2){	// Loop to iterate through Constraint Array
 			target = constr_array[k];	// target set to first value of precedence 
 			if(flag == false){ 			// if flag is still set to false then did not follow the last constraint ,do not go visit 
-				flag=true;
+					flag=true;
 				return;}
 			for(int j= 0;j<size ;j++){	// loop to iterate through A[]
 				if(A[j] == target){		// target value found in A[]
